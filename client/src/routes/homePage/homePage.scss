@@ -1,6 +1,6 @@
 @import "../../responsive.scss";
 
-.home {
+.homePage {
   display: flex;
   height: 100%;
 
@@ -15,11 +15,15 @@
       gap: 50px;
       height: 100%;
 
-      @include md {
+      @include lg{
+        padding-right: 50px;
+      }
+
+      @include md{
         padding: 0;
       }
 
-      @include sm {
+      @include sm{
         justify-content: flex-start;
       }
 
@@ -70,6 +74,10 @@
       width: 115%;
       position: absolute;
       right: 0;
+
+      @include lg {
+        width: 105%;
+      }
     }
   }
 }
